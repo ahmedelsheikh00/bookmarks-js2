@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <title>bookmarks</title>
+</head>
+<body>
+<div class="container pt-2">
+<h1 class="pd-3 text-muted">bookmarks</h1>
+
+<hr>
+<div class="form-project text-center my-5 py-4">
+    <h2 class="fw-bold">bookmarks your favorite site</h2>
+    <div class="form-group mx-5">
+        <label class="text-center fw-bold">site Name</label>
+        <input type="text"  id="name" class="form-control" placeholder="Bookmark Name">
+    </div>
+    <div class="form-group mx-5">
+        <label class="text-center fw-bold">site URL</label>
+        <input type="text"  id="url" class="form-control" placeholder="website url">
+    </div>
+<button id="addBtn" disabled  class="btn btn-primary my-3">Submit</button>
+</div>
+
+<input onkeyup="search(this.value)" class="my-3 form-control" placeholder="search by bookmarks name" >
+
+<div class="output">
+    <table class="table">
+        <thead>
+            <!-- <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                
+            </tr> -->
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+</div>
+<hr>
+<footer>
+    <h6 class="text-muted">@ 2019 bookmarks Inc.</h6>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+    <script src="./style.js"></script>
+</body>
+</html>
